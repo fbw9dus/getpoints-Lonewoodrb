@@ -9,7 +9,8 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-app.get('/api', (req, res) => {res.json([user: 'fake' , password: 'fake'])})
+app.get('/api', (req, res) => {res.json([{user: 'fake' , password: 'fake'}])})
+
 
 
 // view engine setup
